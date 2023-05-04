@@ -838,7 +838,6 @@ class CDTOC(Base):
     track_count = Column(Integer, nullable=False)
     leadout_offset = Column(Integer, nullable=False)
     track_offset = Column(Integer, nullable=False)
-    degraded = Column(Boolean, nullable=False, default=False, server_default=sql.false())
     created = Column(DateTime(timezone=True), server_default=sql.func.now())
 
 
